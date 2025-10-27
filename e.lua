@@ -36,3 +36,9 @@ local Window = Rayfield:CreateWindow({
    }
 })
 local Tab = Window:CreateTab("Tab Example", 4483362458) -- Title, Image
+Rayfield:Notify({
+   Title = "Notification Title",
+   Content = "Notification Content",
+   Duration = 6.5,
+   Image = 4483362458,
+})
