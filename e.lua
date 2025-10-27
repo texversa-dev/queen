@@ -15,7 +15,7 @@ local Window = Rayfield:CreateWindow({
    ConfigurationSaving = {
       Enabled = true,
       FolderName = nil, -- Create a custom folder for your hub/game
-      FileName = "Big Hub"
+      FileName = "RizzHub"
    },
 
    Discord = {
@@ -37,14 +37,15 @@ local Window = Rayfield:CreateWindow({
 })
 local Tab = Window:CreateTab("Tab Example", 4483362458) -- Title, Image
 Rayfield:Notify({
-   Title = "Notification Title",
-   Content = "Notification Content",
+   Title = "Notification",
+   Content = "Thank you for using RizzHub",
    Duration = 6.5,
    Image = 4483362458,
 })
 local Button = Tab:CreateButton({
-   Name = "Button Example",
+   Name = "IY",
    Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
    -- The function that takes place when the button is pressed
    end,
 })
